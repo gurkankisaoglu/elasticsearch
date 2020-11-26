@@ -29,7 +29,7 @@ class TaskDocument(Document):
     name = fields.TextField(
         analyzer=html_strip,
         fields={
-            'raw': fields.KeywordField(analyzer='keyword'),
+            'raw': fields.TextField(analyzer='keyword', fielddata=True),
         },
     )
 
@@ -37,7 +37,7 @@ class TaskDocument(Document):
         attr='created_by_indexing',
         analyzer=html_strip,
         fields={
-            'raw': fields.KeywordField(analyzer='keyword'),
+            'raw': fields.TextField(analyzer='keyword', fielddata=True),
         },
     )
     
