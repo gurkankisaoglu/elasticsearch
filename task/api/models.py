@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 
 class TaskUser(models.Model):
-    """Author."""
+    """Task."""
 
     name = models.CharField(max_length=200)
 
