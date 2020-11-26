@@ -57,13 +57,12 @@ class TaskDocumentView(BaseDocumentViewSet):
                 LOOKUP_QUERY_LTE,
             ],
         },
-        'title': 'title.raw',
-        'publisher': 'publisher.raw',
        }
     # Define ordering fields
     ordering_fields = {
         'id': 'id',
         'name': 'name.raw',
+        'created_by': 'created_by.raw',
     }
     # Specify default ordering
-    ordering = ('id', 'name')
+    ordering = ('id', 'name', 'created_by')

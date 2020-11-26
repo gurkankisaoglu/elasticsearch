@@ -19,5 +19,5 @@ class TaskDocumentSerializer(DocumentSerializer):
         fields = (
             'id',
             'name',
-            'publisher',
+            'created_by',
         )

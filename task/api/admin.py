@@ -12,7 +12,7 @@ class TaskAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
 @admin.register(TaskUser)
-class AuthorAdmin(admin.ModelAdmin):
+class TaskAdmin(admin.ModelAdmin):
     """Task user admin."""
 
     list_display = ('name',)
