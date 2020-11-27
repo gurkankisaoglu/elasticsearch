@@ -6,7 +6,7 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 books = router.register(r'tasks',
                         TaskDocumentView,
-                        basename='bookdocument')
+                        basename='taskdocument')
 
 urlpatterns = [
     url(r'^', include(router.urls)),

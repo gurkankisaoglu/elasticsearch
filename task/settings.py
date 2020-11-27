@@ -39,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'task.api',
     'task.search_service',
-    'django_elasticsearch_dsl_drf',
     # REST framework
     'rest_framework',
     # Django Elasticsearch integration
     'django_elasticsearch_dsl',
     # Django REST framework Elasticsearch integration (this package)
+    'django_elasticsearch_dsl_drf',
     ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
