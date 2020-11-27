@@ -34,7 +34,7 @@ class TaskDocument(Document):
     )
 
     created_by = fields.TextField(
-        attr='created_by_indexing',
+        attr='created_by.name',
         analyzer=html_strip,
         fields={
             'raw': fields.TextField(analyzer='keyword', fielddata=True),

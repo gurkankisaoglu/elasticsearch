@@ -19,13 +19,7 @@ class Task(models.Model):
 
     name = models.CharField(max_length=30)
     created_by = models.ForeignKey(TaskUser, on_delete='CASCADE')
-    @property
-    def created_by_indexing(self):
-        """
-        Used in Elasticsearch indexing/tests.
-        """
-        return self.created_by.name,
-        
+
     class Meta(object):
         """Meta options."""
         ordering = ["id"]
